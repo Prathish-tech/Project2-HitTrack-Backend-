@@ -30,6 +30,22 @@ This repository contains the **Django backend** which powers the API and handles
 
 ## 📁 Folder Structure
 ```
+HitTrack/
+├── core/ # App folder
+│ ├── migrations/
+│ ├── models.py # Shot & Practice models
+│ ├── serializers.py # DRF serializers
+│ ├── views.py # API views (CRUD)
+│ ├── urls.py # API routes
+│ └── tests.py
+├── media/ # Uploaded shot images
+├── HitTrack/ # Django project settings
+│ ├── settings.py
+│ ├── urls.py
+├── db.sqlite3 # Database (you can change to MySQL)
+├── manage.py
+├── .venv/ or venv/
+└── requirements.txt
 ```
 
 ## 🔧 Setup Instructions
@@ -112,12 +128,12 @@ Add endpoints for /auth/token/, /auth/users/, etc.
 
 ## 📮 API Endpoints
 
-|Method|	|    Endpoint   |	|         Description       |
--------------------------------------------------------------
-| GET  |    |  /api/shots/  |	| List all cricket shots    |
-| POST |    |  /api/shots/  |	| Add new shot (with image) |
-| GET  |    |/api/practices/|	| List practice logs        |
-| POST | 	|/api/practices/|	| Log a practice entry      |
+|Method|  |    Endpoint   |	|        Description        |
+|------|--|---------------|-|---------------------------|
+| GET  |  |/api/shots/    |	| List all cricket shots    |
+| POST |  |/api/shots/    |	| Add new shot (with image) |
+| GET  |  |/api/practices/|	| List practice logs        |
+| POST |  |/api/practices/|	| Log a practice entry      |
 
 Customize according to your urls.py and views
 
@@ -155,7 +171,8 @@ CORS_ALLOWED_ORIGINS = [
 
 ## 🙋‍♂️ Author
 Prathish S
-🔗 GitHub 
+
+🔗 GitHub Profile:"Prathish-tech"
 
 ## 📃 License
 This project is open-source and licensed under the MIT License.
