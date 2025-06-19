@@ -111,11 +111,13 @@ Install djoser or SimpleJWT
 Add endpoints for /auth/token/, /auth/users/, etc.
 
 ## 📮 API Endpoints
-Method	Endpoint	Description
-GET	/api/shots/	List all cricket shots
-POST	/api/shots/	Add new shot (with image)
-GET	/api/practices/	List practice logs
-POST	/api/practices/	Log a practice entry
+
+|Method|	|    Endpoint   |	|         Description       |
+-------------------------------------------------------------
+| GET  |    |  /api/shots/  |	| List all cricket shots    |
+| POST |    |  /api/shots/  |	| Add new shot (with image) |
+| GET  |    |/api/practices/|	| List practice logs        |
+| POST | 	|/api/practices/|	| Log a practice entry      |
 
 Customize according to your urls.py and views
 
